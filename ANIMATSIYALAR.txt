@@ -1,0 +1,42 @@
+ANIMATSIYALAR VA BUYURTMA KODI QAYERDA (WebStorm'da Ctrl+Shift+F bilan shu so'zlarni qidiring)
+
+Harfli belgilar kodning ichida ham yozilgan: "ANIM A", "ANIM B" ... deb qidiring.
+
+A. Kirish (intro): eshiklar, harflar, sakrovchi tovuq, zarralar
+   index.html : <div class="intro" id="intro">  (<body> dan keyin)
+   style.css  : "ANIM A"  va  @keyframes drop
+   script.js  : "Ochilishdan oldingi qisqa kirish"
+B. Mahsulot savatga uchib borishi:  script.js "ANIM B" (fly)  |  style.css "ANIM B" (bump)
+C. Summa sanalishi:                  script.js "ANIM C" (countTo)
+D. Aylantirganda paydo bo'lish:      style.css "ANIM D"  |  script.js "ANIM D"
+E. Tugmada yaltirash:                style.css "ANIM E"
+F. Mahsulot ustiga borganda (hover): style.css "ANIM F"
+G. Konfetti (buyurtma yuborilganda): script.js "ANIM G" (confetti)
+H. Karusel slayd harakati:           style.css "ANIM H"  |  script.js goC() ichida ".slide" qatori
+I. Yuqoriga tugmasi:                 style.css "ANIM I"  |  script.js $("up")
+J. Bosh rasm suzishi:                style.css "ANIM J"
+K. Sarlavha yozilishi:               style.css "ANIM K"  |  script.js "ANIM K" (startType)
+L. Telefon titrashi:                 script.js "ANIM L" (vib)
+M. Aylanib turuvchi oq chiziq (mahsulotlar ro'yxati, karusel, matn kartalari): style.css "ANIM M"
+   Tezligi: animation:orb 4s (kichik son = tezroq). Qalinligi: padding:2px. Rangi: --track (fon) va #fff (chiziq).
+N. Footer (to'lqin, suzuvchi nurlar, kartalar, xarita nuqtasi, ochiq/yopiq): index.html <footer id="contact"> | style.css "ANIM N" | script.js "ANIM N" (renderStatus)
+   Ish vaqti soatlari: script.js boshida var OPEN=8,CLOSE=21;  (matn index.html va script.js dagi "hours" da)
+TIL TUGMASI (bitta tugma, 4 til): index.html id="lgb" | script.js "TIL:" (LANGS tartibi, lat2cyr kirill o'giruvchi, T bloklari)
+   Kirill matn lotin o'zbekchadan avtomatik yasaladi, shuning uchun o'zbekcha matnni o'zgartirsangiz kirillda ham o'zgaradi.
+O. Zamonaviy sarlavha (suzuvchi, progress chizig'i, faol bo'lim, savat belgisi, yashirinish), ambient fon, hero aurora, ripple, spotlight, hero 3D burilish, tema almashish effekti:
+   index.html <header id="hd"> | style.css "ANIM O" | script.js "ANIM O" (onScroll, spy, placeNvi, ripple)
+P. Oq (yorug') mavzu dizayni: style.css "ANIM P" (hammasi :root[data-theme=light] bilan boshlanadi; qorong'u mavzu o'zgarmaydi)
+Q. Sozlamalar paneli (til, mavzu, animatsiya, kirish, titrash, katta matn, miqdor qadami, eslab qolish, savatni tozalash, ulashish...): index.html <div class="modal sheet" id="stg"> | style.css "ANIM Q" | script.js "ANIM Q" (S, SD, saveS, syncUI)
+   Buyurtma formasi (ism/telefon/manzil, animatsiyali): index.html id="om" | script.js function updO / okPhone / fmtPhone
+R. Rahmat (xayrlashuv) ekrani: index.html <div class="thx" id="thx"> | style.css "ANIM R" | script.js "ANIM R" (showThx, hideThx)
+   Telegramdan qaytgach mijozdan "yubordingizmi?" deb so'raladi (index.html id="cfm"), "Ha" bosilsa rahmat ekrani chiqadi. Kod: script.js askCfm / back / away.
+   Rahmat ekranida: sakrab quvonayotgan tovuq, yurakchalar, konfetti va "Xaridingiz uchun rahmat!"
+   Yangi mahsulot "Tovuq tandir": js/script.js T bloklaridagi p:[...] ro'yxatining oxirgisi, narxi price ro'yxatining oxirgisi, rasmi images/p8.jpg
+S. Saytni yuklab olish: index.html id="instcard" va id="ins" | style.css "ANIM S" | script.js "ANIM S" (doInstall, openIns)
+
+BUYURTMA (Telegram):
+  Telegram nomi:            script.js eng boshida  var TG="xomtovuq";
+  Buyurtma matni:           script.js  function orderText()
+  Maydonlarni tekshirish:   script.js  function valid()  va  $("otg").addEventListener("click"
+  Xato matnlari:            script.js  miss:  va  phbad:  (uz, en, ru bloklarida)
+  Buyurtma oynasi:          index.html  <div class="modal" id="om">
