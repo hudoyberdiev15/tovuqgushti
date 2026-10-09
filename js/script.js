@@ -52,7 +52,7 @@ function conv(v){return typeof v==="string"?lat2cyr(v):Array.isArray(v)?v.map(co
 T.uzc=conv(T.uz);
 /* Tillar tartibi: tugma bosilganda shu ketma-ketlikda almashadi. Xohlasangiz tartibini o'zgartiring */
 var LANGS=["uz","ru","en","uzc"],LBL={uz:"UZ",ru:"RU",en:"EN",uzc:"ЎЗ"},HL={uz:"uz",ru:"ru",en:"en",uzc:"uz-Cyrl"};
-var price=[30000,45000,30000,39000,60000,12000,12000,30000,50000],icons=["","","","","","","",""],cart={};
+var price=[30000,45000,30000,39000,6000,12000,12000,30000,50000],icons=["","","","","","","",""],cart={};
 var lang="uz",theme="light",$=function(i){return document.getElementById(i)};
 function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g," ")}
 function render(){
